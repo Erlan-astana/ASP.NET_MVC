@@ -1,0 +1,31 @@
+﻿@{
+   
+    ViewBag.Title = "Student";
+    Layout = "~/Views/Users_Layouts/Studens.cshtml";    
+    
+}
+
+<style>
+    .k-grid-footer, .k-grid-footer td, .k-grid-header, .k-grid-header .k-header, .k-pager-numbers .k-state-selected, .k-pager-wrap, .k-scheduler-header, .km-pane-wrapper .k-grid-header .k-header {
+        color: #ffffff;
+        background-color: #68A4D5;
+    }
+
+
+    table {
+        font-size: 12px;
+    }
+
+     .hide {display: none !important; }
+</style>
+
+
+<h2>Оқушы аты-жөні</h2>
+
+     <select class="cmbx_Subject" ></select>
+ <input  type="text" placeholder="Іздеу күн боынша" class="SearchInput_Data" id="SearchInput_Data" />
+<button class="btn-Search btn btn-primary">Іздеу</button>  
+ 
+<div id="div-grid" style="height: calc(100%-40px); width: 70%;">
+</div> 
+<script src="~/Scripts/controller/Student.js"></script>
